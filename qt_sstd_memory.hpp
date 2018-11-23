@@ -3,7 +3,7 @@
 #include <memory>
 
 #ifndef _Qt_SSTD_CORE_EXPORT
-#define _Qt_SSTD_CORE_EXPORT
+#define _Qt_SSTD_CORE_EXPORT Q_CORE_EXPORT
 #endif
 
 namespace sstd {

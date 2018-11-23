@@ -10,6 +10,7 @@ extern "C" {
     __declspec(dllimport) void * je_malloc(size_t size);
     __declspec(dllimport) void   je_free(void *ptr);
     __declspec(dllimport) void * je_aligned_alloc(size_t alignment, size_t size);
+    __declspec(dllimport) void * je_realloc(void *ptr, size_t size);
 }
 
 namespace sstd {
