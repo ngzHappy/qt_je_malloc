@@ -1,5 +1,8 @@
 #pragma once
 
+#ifdef __cplusplus
+
+#include "../global/qglobal.h"
 #include <memory>
 
 #ifndef _Qt_SSTD_CORE_EXPORT
@@ -56,4 +59,9 @@ static inline void* operator new[](std::size_t count, std::align_val_t al) { ret
 static inline void operator delete[](void* ptr, std::align_val_t al) { return sstd::_private_qt::SSTDMemory::operator delete(ptr, al); }
 #endif
 
+
+#endif
+
 /*Endl of hpp*/
+
+
