@@ -1,8 +1,11 @@
-#pragma once
+﻿#pragma once
 
 #ifdef __cplusplus
 
+#if      __has_include("../global/qglobal.h")
 #include "../global/qglobal.h"
+#endif
+
 #include <memory>
 
 #ifndef _Qt_SSTD_CORE_EXPORT
