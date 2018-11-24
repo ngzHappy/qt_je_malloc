@@ -62,6 +62,9 @@ static inline void* operator new[](std::size_t count, std::align_val_t al) { ret
 static inline void operator delete[](void* ptr, std::align_val_t al) { return sstd::_private_qt::SSTDMemory::operator delete(ptr, al); }
 #endif
 
+Q_CORE_EXPORT void *qMalloc(size_t size);
+Q_CORE_EXPORT void qFree(void *ptr);
+Q_CORE_EXPORT void *qRealloc(void *ptr, size_t size);
 
 #endif
 
